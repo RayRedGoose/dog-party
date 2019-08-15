@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Dog Party 2.0</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -19,13 +20,13 @@
     <main>
       <section class="name-the-dog-block">
         <div class="name-the-dog-form__wrapper">
-          <h1 class="title-1">A site about <b>some dogs</b></h1>
+          <h1 class="title-1">A site about <span id="dog-name">some dog</span></h1>
           <img class="image--circle name-the-dog-image" src="images/dog1-sq.jpg" alt="Name This Dog">
-          <form class="name-the-dog-form" action="index.html" method="post">
+          <form id="name-form" class="name-the-dog-form" action="index.html" method="post">
             <label for="name-the-dog">Name
               <input id="name-the-dog" type="text" name="name">
             </label>
-            <input class="name-the-dog-button" type="submit" name="submit" value="Name This Dog">
+            <input id="name-button" class="name-the-dog-button" type="submit" name="submit" value="Name This Dog">
           </form>
         </div>
       </section>
@@ -33,20 +34,20 @@
         <div id="how" class="column">
           <h2 class="title-2">how to dog</h2>
           <img class="image--circle column-image " src="images/dog2-sq.jpg" alt="dog">
-          <p class="column-text">Dat tungg tho pupperino length boy. borkdrive aqua doggo. Maximum borkdrive long doggo extremely cuuuuuute you are doing me the shock borkf , heckin good boys doggo doge. The heighborhood pupper borkf smol corgo long water snoob stop it fren, boofers pupper heck ruff.</p>
-          <input type="submit" class="column-button" name="how" value="How">
+          <p id="how-text" class="column-text">Dat tungg tho pupperino length boy. borkdrive aqua doggo. Maximum borkdrive long doggo extremely cuuuuuute you are doing me the shock borkf , heckin good boys doggo doge. The heighborhood pupper borkf smol corgo long water snoob stop it fren, boofers pupper heck ruff.</p>
+          <input type="submit" id="how-button" class="column-button" name="how" value="How">
         </div>
         <div id="what" class="column">
           <h2 class="title-2">what is dogs</h2>
           <img class="image--circle column-image " src="images/dog3-sq.jpg" alt="dog">
-          <p class="column-text">Long doggo smol borking doggo with a long snoot for pats pupperino h*ck hecking angery woofer shoober aqua doggo heck, doggo aqua doggo most angery pupper I have ever seen heckin angery woofer pupper. ruff adorable doggo very hand that feed shibe. Extremely cuuuuuute corgo waggy wags stop it fren.</p>
-          <input type="submit" class="column-button" name="what" value="What">
+          <p id="what-text" class="column-text">Long doggo smol borking doggo with a long snoot for pats pupperino h*ck hecking angery woofer shoober aqua doggo heck, doggo aqua doggo most angery pupper I have ever seen heckin angery woofer pupper. ruff adorable doggo very hand that feed shibe. Extremely cuuuuuute corgo waggy wags stop it fren.</p>
+          <input type="submit" id="what-button"  class="column-button" name="what" value="What">
         </div>
         <div id="facts" class="column">
           <h2 class="title-2">facts from dogs</h2>
           <img class="image--circle column-image " src="images/dog4-sq.jpg" alt="dog">
-          <p class="column-text">Most angery pupper I have ever seen such treat heck, dat tungg tho. You are doin me a concern shibe such treat ruff heck, stop it fren ur givin me a spook. Puggorino long water shoob dat tungg tho very hand that feed shibe long bois he made many woofs.</p>
-          <input type="submit" class="column-button" name="facts" value="Facts">
+          <p id="facts-text" class="column-text">Most angery pupper I have ever seen such treat heck, dat tungg tho. You are doin me a concern shibe such treat ruff heck, stop it fren ur givin me a spook. Puggorino long water shoob dat tungg tho very hand that feed shibe long bois he made many woofs.</p>
+          <input type="submit" id="facts-button" class="column-button" name="facts" value="Facts">
         </div>
       </section>
     </main>
@@ -59,5 +60,6 @@
         <a href="linkedin.com"><object class="link-image" data="images/linkedin.svg" type="image/svg+xml"></object></a>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
