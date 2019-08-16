@@ -1,6 +1,6 @@
 # Dog Party
 
-##This is realization of the studying project.
+## This is realization of the studying project.
 
 [See result](https://rayredgoose.github.io/dog-party/)
 
