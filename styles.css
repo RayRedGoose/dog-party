@@ -12,6 +12,13 @@ body {
   border-bottom: 3px solid #048eaa;
 }
 
+@media (max-width: 480px) {
+  .header {
+    height: 300px;
+    padding: 10px;
+  }
+}
+
 .logo__image {
   width: 50px;
   height: 50px;
@@ -22,12 +29,18 @@ body {
   position: absolute;
   display: inline;
   right: 0px;
-  padding-top: 23px;
-  padding-right: 20px;
+  padding-right: 10px;
+  margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+  .header-nav {
+    position: none;
+    display: block;
+  }
 }
 
 .list {
-  display: inline;
   list-style: none;
 }
 
@@ -38,6 +51,12 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   margin-left: 15px;
+}
+
+@media (max-width: 480px) {
+  .list-item {
+    display: block;
+  }
 }
 
 .preview {
