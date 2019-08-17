@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Dog Party 2.0</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -12,37 +13,34 @@
       <nav class="header-nav">
         <ul class="list">
           <li class="list-item"><a href="#how" id="how-nav" class="list-item">how to dog</a></li>
+          <div id="how-preview" class="preview-card hidden">
+            <h3 class="preview-title">how to dog</h2>
+            <img class="preview-image" src="images/dog2-sq.jpg" alt="dog">
+            <p id="how-preview-text" class="preview-text">Dat tungg tho pupperino length boy. borkdrive aqua doggo. Maximum borkdrive long doggo extremely cuuuuuute ...</p>
+          </div>
           <li class="list-item"><a href="#what" id="what-nav" class="list-item">what is dogs</a></li>
+          <div id="what-preview" class="preview-card hidden">
+            <h3 class="preview-title">what is dogs</h2>
+            <img class="preview-image" src="images/dog3-sq.jpg" alt="dog">
+            <p id="what-preview-text" class="preview-text">Long doggo smol borking doggo with a long snoot for pats pupperino h*ck hecking angery woofer shoober ...</p>
+          </div>
           <li class="list-item"><a href="#facts" id="facts-nav" class="list-item">facts from dogs</a></li>
+          <div id="facts-preview" class="preview-card hidden">
+            <h3 class="preview-title">facts from dogs</h2>
+            <img class="preview-image" src="images/dog4-sq.jpg" alt="dog">
+            <p id="facts-preview-text" class="preview-text">Most angery pupper I have ever seen such treat heck, dat tungg tho. You are doin me a concern shibe such treat ruff heck ...</p>
+          </div>
         </ul>
       </nav>
     </header>
-    <div class="preview">
-      <div id="how-preview" class="preview-card hidden">
-        <h3 class="preview-title">how to dog</h2>
-        <img class="preview-image" src="images/dog2-sq.jpg" alt="dog">
-        <p id="how-preview-text" class="preview-text">Dat tungg tho pupperino length boy. borkdrive aqua doggo. Maximum borkdrive long doggo extremely cuuuuuute ...</p>
-      </div>
-      <div id="what-preview" class="preview-card hidden">
-        <h3 class="preview-title">what is dogs</h2>
-        <img class="preview-image" src="images/dog3-sq.jpg" alt="dog">
-        <p id="what-preview-text" class="preview-text">Long doggo smol borking doggo with a long snoot for pats pupperino h*ck hecking angery woofer shoober ...</p>
-      </div>
-      <div id="facts-preview" class="preview-card hidden">
-        <h3 class="preview-title">facts from dogs</h2>
-        <img class="preview-image" src="images/dog4-sq.jpg" alt="dog">
-        <p id="facts-preview-text" class="preview-text">Most angery pupper I have ever seen such treat heck, dat tungg tho. You are doin me a concern shibe such treat ruff heck ...</p>
-      </div>
-    </div>
     <main>
       <section class="name-the-dog-block">
         <div class="name-the-dog-form__wrapper">
           <h1 class="title-1">A site about <span id="dog-name">some dog</span></h1>
           <img class="image--circle name-the-dog-image" src="images/dog1-sq.jpg" alt="Name This Dog">
           <form id="name-form" class="name-the-dog-form" action="index.html" method="post">
-            <label for="name-the-dog">Name
-              <input id="name-the-dog" type="text" name="name">
-            </label>
+            <label for="name-the-dog">Name</label>
+            <input id="name-the-dog" type="text" name="name">
             <input id="name-button" class="name-the-dog-button" type="submit" name="submit" value="Name This Dog">
           </form>
         </div>
@@ -51,7 +49,7 @@
         <div id="how" class="column">
           <h2 class="title-2">how to dog</h2>
           <img class="image--circle column-image " src="images/dog2-sq.jpg" alt="dog">
-          <p id="how-text" class="column-text">Dat tungg tho pupperino length boy. borkdrive aqua doggo. Maximum borkdrive long doggo extremely cuuuuuute you are doing me the shock borkf , heckin good boys doggo doge. The heighborhood pupper borkf smol corgo long water snoob stop it fren, boofers pupper heck ruff.</p>
+          <div class="text-wrapper"><p id="how-text" class="column-text">Dat tungg tho pupperino length boy. borkdrive aqua doggo. Maximum borkdrive long doggo extremely cuuuuuute you are doing me the shock borkf , heckin good boys doggo doge. The heighborhood pupper borkf smol corgo long water snoob stop it fren, boofers pupper heck ruff.</p></div>
           <input type="submit" id="how-button" class="column-button" name="how" value="How">
           <form id="how-column-modification" class="column-modification hidden" action="index.html" method="post">
             <label class="label" for="how-pixel">Font Size<input type="text" id="how-pixel" class="pixel"></label>
@@ -69,7 +67,7 @@
         <div id="what" class="column">
           <h2 class="title-2">what is dogs</h2>
           <img class="image--circle column-image " src="images/dog3-sq.jpg" alt="dog">
-          <p id="what-text" class="column-text">Long doggo smol borking doggo with a long snoot for pats pupperino h*ck hecking angery woofer shoober aqua doggo heck, doggo aqua doggo most angery pupper I have ever seen heckin angery woofer pupper. ruff adorable doggo very hand that feed shibe. Extremely cuuuuuute corgo waggy wags stop it fren.</p>
+          <div class="text-wrapper"><p id="what-text" class="column-text">Long doggo smol borking doggo with a long snoot for pats pupperino h*ck hecking angery woofer shoober aqua doggo heck, doggo aqua doggo most angery pupper I have ever seen heckin angery woofer pupper. ruff adorable doggo very hand that feed shibe. Extremely cuuuuuute corgo waggy wags stop it fren.</p></div>
           <input type="submit" id="what-button"  class="column-button" name="what" value="What">
           <form id="what-column-modification" class="column-modification hidden" action="index.html" method="post">
             <label class="label" for="what-pixel">Font Size<input type="text" id="what-pixel" class="pixel"></label>
@@ -87,7 +85,7 @@
         <div id="facts" class="column">
           <h2 class="title-2">facts from dogs</h2>
           <img class="image--circle column-image " src="images/dog4-sq.jpg" alt="dog">
-          <p id="facts-text" class="column-text">Most angery pupper I have ever seen such treat heck, dat tungg tho. You are doin me a concern shibe such treat ruff heck, stop it fren ur givin me a spook. Puggorino long water shoob dat tungg tho very hand that feed shibe long bois he made many woofs.</p>
+          <div class="text-wrapper"><p id="facts-text" class="column-text">Most angery pupper I have ever seen such treat heck, dat tungg tho. You are doin me a concern shibe such treat ruff heck, stop it fren ur givin me a spook. Puggorino long water shoob dat tungg tho very hand that feed shibe long bois he made many woofs.</p></div>
           <input type="submit" id="facts-button" class="column-button" name="facts" value="Facts">
           <form id="facts-column-modification" class="column-modification hidden" action="index.html" method="post">
             <label class="label" for="facts-pixel">Font Size<input type="text" id="facts-pixel" class="pixel"></label>
@@ -102,7 +100,9 @@
             <input type="submit" id="facts-change-button" class="change-button" name="how" value="Change">
           </form>
         </div>
-        <input type="submit" id="show-button" class="show-button" name="how" value="Edit">
+        <div class="show-button-wrapper">
+          <input type="submit" id="show-button" class="show-button" name="how" value="Edit">
+        </div>
       </section>
     </main>
     <footer class="footer">
