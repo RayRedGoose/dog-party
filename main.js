@@ -63,13 +63,14 @@ namingButton.onclick = function (event) {
 
 // how-what-facts block js
 
+var wrapper = document.querySelector('.text-wrapper');
 var howButton = document.getElementById('how-button');
 
 howButton.onclick = function() {
     var howText = document.getElementById('how-text');
 
     if (howText.style.display !== 'none') {
-        howText.style.display = 'none';
+        wrapper.style.display = 'none';
         howButton.style.width = '200px';
     } else {
         howText.style.display = 'block';
@@ -83,7 +84,7 @@ whatButton.onclick = function() {
     var whatText = document.getElementById('what-text');
 
     if (whatText.style.display !== 'none') {
-        whatText.style.display = 'none';
+        wrapper.style.display = 'none';
         whatButton.style.width = '200px';
     } else {
         whatText.style.display = 'block';
@@ -97,7 +98,7 @@ factsButton.onclick = function() {
     var factsText = document.getElementById('facts-text');
 
     if (factsText.style.display !== 'none') {
-        factsText.style.display = 'none';
+        wrapper.style.display = 'none';
         factsButton.style.width = '200px';
     } else {
         factsText.style.display = 'block';
