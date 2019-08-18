@@ -5,12 +5,13 @@ var howNav = document.getElementById('how-nav');
 howNav.onmouseover = function () {
   var howPreview = document.getElementById('how-preview');
     howPreview.classList.remove('hidden');
+    howPreview.classList.add('shadow-animation');
 }
 
 howNav.onmouseout = function () {
   var howPreview = document.getElementById('how-preview');
     howPreview.classList.add('hidden');
-
+    howPreview.classList.remove('shadow-animation');
 }
 
 var whatNav = document.getElementById('what-nav');
@@ -18,11 +19,13 @@ var whatNav = document.getElementById('what-nav');
 whatNav.onmouseover = function () {
   var whatPreview = document.getElementById('what-preview');
     whatPreview.classList.remove('hidden');
+    whatPreview.classList.add('shadow-animation');
 }
 
 whatNav.onmouseout = function () {
   var whatPreview = document.getElementById('what-preview');
     whatPreview.classList.add('hidden');
+    whatPreview.classList.remove('shadow-animation');
 }
 
 var factsNav = document.getElementById('facts-nav');
@@ -30,11 +33,13 @@ var factsNav = document.getElementById('facts-nav');
 factsNav.onmouseover = function () {
   var factsPreview = document.getElementById('facts-preview');
   factsPreview.classList.remove('hidden');
+  factsPreview.classList.add('shadow-animation');
 }
 
 factsNav.onmouseout = function () {
   var factsPreview = document.getElementById('facts-preview');
   factsPreview.classList.add('hidden');
+  factsPreview.classList.remove('shadow-animation');
 }
 
 // name-the-dog block
@@ -114,10 +119,16 @@ showButton.onclick = function() {
         howForm.classList.remove('hidden');
         whatForm.classList.remove('hidden');
         factsForm.classList.remove('hidden');
+        howForm.classList.add('slide-animation');
+        whatForm.classList.add('slide-animation');
+        factsForm.classList.add('slide-animation');
     } else {
         howForm.classList.add('hidden');
         whatForm.classList.add('hidden');
         factsForm.classList.add('hidden');
+        howForm.classList.remove('slide-animation');
+        whatForm.classList.remove('slide-animation');
+        factsForm.classList.remove('slide-animation');
     }
 };
 
