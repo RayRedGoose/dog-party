@@ -63,17 +63,18 @@ namingButton.onclick = function (event) {
 
 // how-what-facts block js
 
-var wrapper = document.querySelector('.text-wrapper');
+
 var howButton = document.getElementById('how-button');
 
 howButton.onclick = function() {
     var howText = document.getElementById('how-text');
+    var howWrapper = document.getElementById('how-wrapper');
 
     if (howText.style.display !== 'none') {
-        wrapper.style.display = 'none';
+        howWrapper.style.display = 'none';
         howButton.style.width = '200px';
     } else {
-        howText.style.display = 'block';
+        howWrapper.style.display = 'block';
         howButton.style.width = '300px';
     }
 };
@@ -82,12 +83,12 @@ var whatButton = document.getElementById('what-button');
 
 whatButton.onclick = function() {
     var whatText = document.getElementById('what-text');
-
+    var whatWrapper = document.getElementById('what-wrapper');
     if (whatText.style.display !== 'none') {
-        wrapper.style.display = 'none';
+        whatWrapper.style.display = 'none';
         whatButton.style.width = '200px';
     } else {
-        whatText.style.display = 'block';
+        whatWrapper.style.display = 'block';
         whatButton.style.width = '300px';
     }
 };
@@ -96,12 +97,13 @@ var factsButton = document.getElementById('facts-button');
 
 factsButton.onclick = function() {
     var factsText = document.getElementById('facts-text');
+    var factsWrapper = document.getElementById('facts-wrapper');
 
     if (factsText.style.display !== 'none') {
-        wrapper.style.display = 'none';
+        factsWrapper.style.display = 'none';
         factsButton.style.width = '200px';
     } else {
-        factsText.style.display = 'block';
+        factsWrapper.style.display = 'block';
         factsButton.style.width = '300px';
     }
 };
