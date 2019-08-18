@@ -67,10 +67,9 @@ namingButton.onclick = function (event) {
 var howButton = document.getElementById('how-button');
 
 howButton.onclick = function() {
-    var howText = document.getElementById('how-text');
     var howWrapper = document.getElementById('how-wrapper');
 
-    if (howText.style.display !== 'none') {
+    if (howWrapper.style.display !== 'none') {
         howWrapper.style.display = 'none';
         howButton.style.width = '200px';
     } else {
@@ -84,7 +83,7 @@ var whatButton = document.getElementById('what-button');
 whatButton.onclick = function() {
     var whatText = document.getElementById('what-text');
     var whatWrapper = document.getElementById('what-wrapper');
-    if (whatText.style.display !== 'none') {
+    if (whatWrapper.style.display !== 'none') {
         whatWrapper.style.display = 'none';
         whatButton.style.width = '200px';
     } else {
@@ -99,7 +98,7 @@ factsButton.onclick = function() {
     var factsText = document.getElementById('facts-text');
     var factsWrapper = document.getElementById('facts-wrapper');
 
-    if (factsText.style.display !== 'none') {
+    if (factsWrapper.style.display !== 'none') {
         factsWrapper.style.display = 'none';
         factsButton.style.width = '200px';
     } else {
